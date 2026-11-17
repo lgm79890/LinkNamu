@@ -12,9 +12,10 @@ export default function LinkCard({ title, url }: LinkCardProps) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative flex min-h-14 w-full items-center rounded-2xl border border-card-border bg-card px-12 py-3 text-center font-medium shadow-sm transition-colors hover:bg-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      data-inspect="LinkCard"
+      className="relative flex min-h-14 w-full items-center rounded-2xl border border-card-border bg-card px-16 py-3 text-center font-medium shadow-sm transition-colors hover:bg-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
-      <span className="absolute left-4 text-accent">
+      <span className="absolute left-2.5">
         <LinkIcon url={url} />
       </span>
       <span className="flex-1 break-words">{title}</span>
