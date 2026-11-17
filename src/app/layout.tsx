@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import ComponentInspector from "@/components/dev/ComponentInspector";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,7 +24,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        {/* 개발 서버에서만 표시 (배포 빌드에는 포함되지 않음) */}
+        {process.env.NODE_ENV === "development" && <ComponentInspector />}
+      </body>
     </html>
   );
 }

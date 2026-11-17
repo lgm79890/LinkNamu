@@ -16,6 +16,7 @@ export default function Avatar({ name, src, size = 96 }: AvatarProps) {
         width={size}
         height={size}
         priority
+        data-inspect="Avatar"
         className="rounded-full object-cover"
         style={{ width: size, height: size }}
       />
@@ -27,6 +28,7 @@ export default function Avatar({ name, src, size = 96 }: AvatarProps) {
   return (
     <div
       role="img"
+      data-inspect="Avatar"
       aria-label={`${name} 기본 프로필 아바타`}
       className="flex items-center justify-center rounded-full bg-accent font-semibold text-accent-foreground"
       style={{ width: size, height: size, fontSize: size * 0.4 }}

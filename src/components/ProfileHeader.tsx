@@ -12,7 +12,7 @@ export default function ProfileHeader({
   avatarUrl,
 }: ProfileHeaderProps) {
   return (
-    <header className="flex flex-col items-center text-center">
+    <header data-inspect="ProfileHeader" className="flex flex-col items-center text-center">
       <Avatar name={displayName} src={avatarUrl} size={150} />
       <h1 className="mt-4 text-2xl font-bold">{displayName}</h1>
       {bio && <p className="mt-2 text-base text-muted">{bio}</p>}

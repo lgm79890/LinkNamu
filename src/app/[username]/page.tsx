@@ -54,7 +54,10 @@ export default async function PublicProfilePage({
   if (!profile) notFound();
 
   return (
-    <main className="mx-auto flex w-full max-w-[680px] flex-1 flex-col px-4 pt-12 pb-8 sm:pt-16">
+    <main
+      data-inspect="PublicProfilePage"
+      className="mx-auto flex w-full max-w-[680px] flex-1 flex-col px-4 pt-12 pb-8 sm:pt-16"
+    >
       <ProfileHeader
         displayName={profile.displayName}
         bio={profile.bio}
