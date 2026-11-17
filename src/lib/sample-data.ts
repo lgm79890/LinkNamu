@@ -7,7 +7,7 @@ export const sampleUsers: User[] = [
     username: "kyungmin",
     displayName: "임경민",
     bio: "만들고, 기록하고, 나눕니다.",
-    avatarUrl: "/avatars/kyungmin-profile.jpg",
+    avatarUrl: "/avatars/real-profile.jpg",
     links: [
       { id: "l1", title: "유튜브 채널", url: "https://www.youtube.com/", position: 0, isVisible: true },
       { id: "l2", title: "인스타그램", url: "https://www.instagram.com/", position: 1, isVisible: true },
